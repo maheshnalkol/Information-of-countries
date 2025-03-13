@@ -3,7 +3,7 @@ const showcard = document.getElementById("showcard");
 const newCountries=(display = countries)=>{
     let result=``;
     display.forEach((flag)=>{
-        result+=`<div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+        result+=`<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
                 <div class="card h-100 shadow-sm">
                     <img src="${flag.flag}" alt="${flag.name}"
                         class="img mb-3" title="${flag.name}">
