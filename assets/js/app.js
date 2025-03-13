@@ -40,6 +40,8 @@ searchBar.addEventListener("keyup",searchEvent);
 
 
 const sortName= document.getElementById('sortName');
+const nameUp=document.getElementById('nameUp');
+const nameDown=document.getElementById('nameDown');
 
 const onclickSortName=(eve)=>{
     
@@ -49,6 +51,7 @@ const onclickSortName=(eve)=>{
         })
         newCountries(country);
         sortName.classList.remove("default");
+        nameDown.classList.add('d-none')
         sortName.classList.add("a-z");
     }else if(eve.target && eve.target.classList.contains("a-z")){
         country.sort((a,b)=>{
@@ -57,15 +60,23 @@ const onclickSortName=(eve)=>{
         newCountries(country);
         sortName.classList.remove("a-z")
         sortName.classList.add("z-a")
+        nameDown.classList.remove('d-none')
+        nameUp.classList.add('d-none')
     }else{
         sortName.classList.add('default')
+        nameUp.classList.remove('d-none')
+        
        return  newCountries();
     }
 }
 
 sortName.addEventListener('click',onclickSortName);
 
+
 const sortCapital= document.getElementById('sortCapital');
+const capitalUp=document.getElementById('capitalUp');
+const capitalDown=document.getElementById('capitalDown');
+
 const onclickSortCapital=(eve)=>{
     console.log(eve.target);
     
@@ -78,6 +89,7 @@ const onclickSortCapital=(eve)=>{
         })
         newCountries(country);
         sortCapital.classList.remove("default");
+        capitalDown.classList.add('d-none');
         sortCapital.classList.add("a-z");
     }else if(eve.target && eve.target.classList.contains("a-z")){
         country.sort((a,b)=>{
@@ -88,15 +100,21 @@ const onclickSortCapital=(eve)=>{
         })
         newCountries(country);
         sortCapital.classList.remove("a-z")
+        capitalDown.classList.remove('d-none')
+        capitalUp.classList.add('d-none')
         sortCapital.classList.add("z-a")
     }else{
         sortCapital.classList.add('default')
+        capitalUp.classList.remove('d-none')
        return newCountries();
     }
 }
 sortCapital.addEventListener('click',onclickSortCapital);
 
 const sortPopulation= document.getElementById('sortPopulation');
+const populationUp=document.getElementById('populationUp');
+const populationDown=document.getElementById('populationDown');
+
 
 const onclickSortPopulation=(eve)=>{
     console.log(eve.target);
@@ -107,6 +125,7 @@ const onclickSortPopulation=(eve)=>{
         })
         newCountries(country);
         sortPopulation.classList.remove("default");
+        populationDown.classList.add('d-none')
         sortPopulation.classList.add("a-z");
     }else if(eve.target && eve.target.classList.contains("a-z")){
         country.sort((a,b)=>{
@@ -114,9 +133,12 @@ const onclickSortPopulation=(eve)=>{
         })
         newCountries(country);
         sortPopulation.classList.remove("a-z")
+        populationDown.classList.remove('d-none')
+        populationUp.classList.add('d-none')
         sortPopulation.classList.add("z-a")
     }else{
         sortPopulation.classList.add('default')
+        populationUp.classList.remove('d-none')
        return newCountries();
     }
 }
