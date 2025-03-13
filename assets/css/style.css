@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    overflow-x: hidden;
+}
+.heroImg{
+    margin-top: 2rem;
+}
+.header{
+    background-color: #f4eded;
+    margin-bottom: 1rem;
+}
+
+.heading {
+    text-transform: capitalize;
+    margin: 0;
+    color: #ffa500;
+    font-size: 72px;
+    font-weight: bold;
+}
+.heading-sec{
+    font-size: 32px;
+    font-weight: bold;
+}
+.heroImg .custom-form{
+    background-color: #f4eded;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.custom-btn{
+    width: 250px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: orange;
+}
+.custom-div{
+    width: 60%;
+    margin: 0 auto;
+}
+.mainSection{
+    background-color: #f4efef;
+    margin-bottom: 2rem;
+}
+.px{
+    padding-left: 10px;
+}
+.heroImg a{
+    display: inline-block;
+    margin-left: 10px;
+}
+.heroImg a i{
+    line-height: 69px;
+    color: orange;
+}
+.lastSection{
+    background-color: #f4efef;
+    padding-top: 2rem;
+}
+.lastSection .spanHead{
+    background-color: orange;
+    padding: 5px;
+    border-radius: 5px;
+}
+.lastSection h1{
+    margin-bottom: 2rem;
+}
+#graphData li{
+    background: transparent;
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+
+    margin-bottom: .5rem;
+    border-radius: 0.4rem;
+    padding: 0;
+}
+#showGraph li{
+    background-color: aqua;
+    color: black;
+    margin-bottom: .5rem;
+    border-radius: 0.4rem;
+    padding: 0;
+}
+#graphData li span{
+    background-color: #0ab92a;
+    color: black;
+    padding: .3rem;
+    border-radius: .4rem;
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+}
+#graphData .world>span{
+    width: 100%;
+}
+#countiresNames li,#showGraph li{
+
+    height: 2rem;
+}
+
+
+
+
